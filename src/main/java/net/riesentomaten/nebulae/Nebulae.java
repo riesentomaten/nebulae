@@ -32,10 +32,8 @@ import org.slf4j.Logger;
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(Nebulae.MODID)
 class Nebulae {
-    // Define mod id in a common place for everything to reference
     public static final String MODID = "nebulae";
-    // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public Nebulae() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
